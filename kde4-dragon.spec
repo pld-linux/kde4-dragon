@@ -4,7 +4,7 @@
 
 Summary:	Dragon Player - very simple Phonon-based media player
 Summary(pl.UTF-8):	Dragon Player - bardzo prosty odtwarzacz multimediów oparty na Phononie
-Name:		kde4-kdemultimedia
+Name:		kde4-%{orgname}
 Version:	4.9.0
 Release:	0.1
 License:	GPL v2+
