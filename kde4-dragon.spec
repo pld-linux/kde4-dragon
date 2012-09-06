@@ -5,12 +5,12 @@
 Summary:	Dragon Player - very simple Phonon-based media player
 Summary(pl.UTF-8):	Dragon Player - bardzo prosty odtwarzacz multimediów oparty na Phononie
 Name:		kde4-%{orgname}
-Version:	4.9.0
-Release:	2
+Version:	4.9.1
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	1b89a6d22f687f1bb0781b29787ffdb8
+# Source0-md5:	9a967416bb0295eff42fb3a4bf85b348
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}
@@ -62,10 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kde4/services/ServiceMenus/dragonplayer_play_dvd.desktop
 %{_datadir}/kde4/services/dragonplayer_part.desktop
 %{_desktopdir}/kde4/dragonplayer.desktop
-%{_iconsdir}/*/*/apps/dragonplayer.png
+%{_iconsdir}/*/*/apps/dragonplayer.*
 %{_iconsdir}/*/*/actions/player-volume-muted.png
-# FIXME: add -svg-icons subpackage like in kdebase-workspace and put the icons there
-#%{_iconsdir}/*/scalable/actions/player-volume-muted.svgz
-#%{_iconsdir}/hicolor/scalable/apps/dragonplayer.svgz
+# FIXME: add -oxygen-svg-icons subpackage like in kdebase-workspace and put the icons there
+#%{_iconsdir}/oxygen/scalable/actions/player-volume-muted.svgz
 %lang(en) %{_kdedocdir}/en/dragonplayer
 %{_mandir}/man1/dragon.1*
