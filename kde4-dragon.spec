@@ -5,12 +5,12 @@
 Summary:	Dragon Player - very simple Phonon-based media player
 Summary(pl.UTF-8):	Dragon Player - bardzo prosty odtwarzacz multimediów oparty na Phononie
 Name:		kde4-%{orgname}
-Version:	4.11.4
+Version:	4.12.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	c58d0fe30daae47b5199190ae6733608
+# Source0-md5:	3029633dc44dca9b4b679eed2368c1f2
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}
@@ -19,7 +19,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
-Requires:	kde4-kdebase-workspace-solid >= %{version}
+Requires:	kde4-kdebase-workspace-solid >= 4.11.4
 Requires:	kde4-kdelibs >= %{version}
 Obsoletes:	kde4-kdemultimedia-dragon < 4.8.99-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
